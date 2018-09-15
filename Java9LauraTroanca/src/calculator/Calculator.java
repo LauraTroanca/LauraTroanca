@@ -12,7 +12,7 @@ package calculator;
 public class Calculator {
         int rezultat=0;
     
-    
+    // Comment
 
     public int aduna (int a, int b){
     rezultat=a+b;
