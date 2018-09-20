@@ -20,13 +20,18 @@ public class Autoservice {
      */
     public static void main(String[] args) {
         
-    Car m1 = new Car("001ABC", 150, WHITE, 20000, 120);
+    Car m1 = new Car("B001ABC", 50, WHITE, 20000, 120);
     Car m2 = new Car("B020DFE", 180, RED, 25000, 150);
     Car m3 = new Car("B300NTD", 130, YELLOW, 15000, 100);
     
+    String cuc = m1.getName();  //nu vede m1 daca scriu in displayAutoservice
+    System.out.println(cuc);
+    
+    //displayAutoservice();
+    
     }
     
-    private void displayAutoservice() {
+    private static void displayAutoservice() {
         
     }
     
