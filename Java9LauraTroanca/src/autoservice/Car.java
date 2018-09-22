@@ -20,6 +20,8 @@ public class Car implements Saleable, Rentable{
  private Color color;
  private String name;
  private short speed;
+ private int salePrice;
+ private int rentPrice;
  /**
  Constructors
  */
@@ -27,15 +29,45 @@ public class Car implements Saleable, Rentable{
  name = "Default car name";
  speed = 90;
  }
- public Car(String carName, short carSpeed, Color carColor){
+ 
+ public Car(String carName, int carSpeed, Color carColor){
  name = carName;
  speed = carSpeed;
  color = carColor;
  }
+ 
+ public Car(String carName, int carSpeed, Color carColor, int carSale, 
+            int carRent){
+ name = carName;
+ speed = carSpeed;
+ color = carColor;
+ salePrice = carSale;
+ rentPrice = carRent;
+ }
  /*get-ers and set-ers*/
  public String getName(){
- return(name);
+ return this.name;
  }
+
+    public int getRentPrice() {
+        return rentPrice;
+    }
+
+    public static boolean isRENTABLE() {
+        return RENTABLE;
+    }
+
+    public static boolean isSALEABLE() {
+        return SALEABLE;
+    }
+
+    public void setSalePrice(int salePrice) {
+        this.salePrice = salePrice;
+    }
+
+    public void setRentPrice(int rentPrice) {
+        this.rentPrice = rentPrice;
+    }
  public Color getColor(){
  return(color);
  }
@@ -82,7 +114,7 @@ public class Car implements Saleable, Rentable{
  */
  @Override
  public int getSalePrice(){
- return(12000);
+ return(salePrice);
  }
  /**
  Abstract method defined in Rentable interface implemented by class car
@@ -91,7 +123,7 @@ public class Car implements Saleable, Rentable{
  */
  @Override
  public int getDailyRentPrice(){
- return(250); 
+ return(rentPrice); 
  }
 }
    
