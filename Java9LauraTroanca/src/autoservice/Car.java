@@ -30,13 +30,13 @@ public class Car implements Saleable, Rentable{
  speed = 90;
  }
  
- public Car(String carName, int carSpeed, Color carColor){
+ public Car(String carName, short carSpeed, Color carColor){
  name = carName;
  speed = carSpeed;
  color = carColor;
  }
  
- public Car(String carName, int carSpeed, Color carColor, int carSale, 
+ public Car(String carName, short carSpeed, Color carColor, int carSale, 
             int carRent){
  name = carName;
  speed = carSpeed;
@@ -45,29 +45,30 @@ public class Car implements Saleable, Rentable{
  rentPrice = carRent;
  }
  /*get-ers and set-ers*/
+ 
  public String getName(){
  return this.name;
  }
 
-    public int getRentPrice() {
-        return rentPrice;
-    }
+public int getRentPrice() {
+    return rentPrice;
+}
 
-    public static boolean isRENTABLE() {
-        return RENTABLE;
-    }
+public static boolean isRENTABLE() {
+    return RENTABLE;
+}
 
-    public static boolean isSALEABLE() {
-        return SALEABLE;
-    }
+public static boolean isSALEABLE() {
+    return SALEABLE;
+}
 
-    public void setSalePrice(int salePrice) {
-        this.salePrice = salePrice;
-    }
+public void setSalePrice(int salePrice) {
+    this.salePrice = salePrice;
+}
 
-    public void setRentPrice(int rentPrice) {
-        this.rentPrice = rentPrice;
-    }
+public void setRentPrice(int rentPrice) {
+    this.rentPrice = rentPrice;
+}
  public Color getColor(){
  return(color);
  }

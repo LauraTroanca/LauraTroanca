@@ -65,7 +65,7 @@ public class Autoservice {
     m3.decreaseSpeed(((short)(m2.getSpeed())-10));
     
 //5.g Display all informations about all cars calling the method displayAutoservice()
-    displayAutoservice()
+    displayAutoservice();
     }
     
         private static void displayAutoservice() {
