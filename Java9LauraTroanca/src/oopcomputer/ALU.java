@@ -11,7 +11,15 @@ public class ALU {
     
     private Integer operandUnu;
     private Integer operandDoi;
-    private Character operand;
+    private Character operator;
+
+    public Character getOperator() {
+        return operator;
+    }
+
+    public void setOperator(Character operator) {
+        this.operator = operator;
+    }
     private Integer rezultat;
 
     public Integer getOperandUnu() {
@@ -41,7 +49,7 @@ public class ALU {
     
     public void calculeaza(){
         
-        switch (operand){
+        switch (operator){
             case '+': 
                 rezultat = operandUnu + operandDoi;
                 break;
