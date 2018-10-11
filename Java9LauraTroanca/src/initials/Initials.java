@@ -22,21 +22,17 @@ public class Initials {
         System.out.println("Your name is " + name);
         
         
-        String ini; 
-   // we use ini to return the output
-   for (int i=0; i<name.length(); i++){
-      // sorry about the 3x&&, dont remember the use of trim, but you
-      // can check " your name complete" if " y"==true y is what you want
-      if (name.charAt(i)==" " && i+1 < name.length() && name.charAt(i+1)!=" "){
-         //if i+1==name.length() you will have an indexboundofexception
-         //add the initials
-         ini+=name.charAt(i+1);
-      }
-   }
-   //after getting "ync" => return "YNC"
-   return ini.toUpperCase();
+        String ini = name.substring(0, 1);
+        
    
+       for (int i=0; i<name.length(); i++){
+          if ((name.charAt(i)==' ' )&& (i+1 < name.length()) &&(name.charAt(i+1)!=' ')){
+             ini= ini + name.charAt(i+1);
+          }
+        }
    
+       ini = ini.toUpperCase();
+       System.out.println("Your initials are " + ini);
     }
     
 }
