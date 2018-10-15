@@ -56,13 +56,13 @@ public class Autoservice {
     displayAutoservice();
     
 //5.d Increase speed of first car with 10
-    m1.increaseSpeed(((short)m1.getSpeed()+10));
+    m1.increaseSpeed((short)(m1.getSpeed()+10));
 
 //5.e Decrease speed of second car with 10
-    m2.decreaseSpeed(((short)(m2.getSpeed())-10));
+    m2.decreaseSpeed((short)(m2.getSpeed()-10));
     
 //5.f Increase renting price of third car with 15 and decrease its sale price with 1200
-    m3.decreaseSpeed(((short)(m2.getSpeed())-10));
+    m3.decreaseSpeed((short)(m2.getSpeed()-10));
     
 //5.g Display all informations about all cars calling the method displayAutoservice()
     displayAutoservice();
