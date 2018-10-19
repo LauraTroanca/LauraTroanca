@@ -26,7 +26,7 @@ public class CreateNewFile {
 
         try {
 
-                String content = "This is the content to write into file\n";
+                String content = "This is the content to write into file.\n";
 
                 fw = new FileWriter(FILENAME);
                 bw = new BufferedWriter(fw);
@@ -35,7 +35,9 @@ public class CreateNewFile {
                 System.out.println("Done");
 
         } catch (IOException e) {
-        } finally {
+            System.out.println(e.getMessage());
+        } 
+        finally {
 
                 try {
 
@@ -46,6 +48,7 @@ public class CreateNewFile {
                                 fw.close();
 
                 } catch (IOException ex) {
+                    System.out.println(ex.getMessage());
                 }
 
         }
