@@ -26,7 +26,7 @@ public class CreateNewFile {
 
         try {
 
-                String content = "This is the content to write into file.\n";
+                String content = "This is the content to write into files.\n";
 
                 fw = new FileWriter(FILENAME);
                 bw = new BufferedWriter(fw);
