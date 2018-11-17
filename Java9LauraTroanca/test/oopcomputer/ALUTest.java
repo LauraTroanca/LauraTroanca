@@ -43,7 +43,7 @@ public class ALUTest {
     @Test
     public void testGetOperator() {
         System.out.println("getOperator");
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         Character expResult = null;
         Character result = instance.getOperator();
         assertEquals(expResult, result);
@@ -58,7 +58,7 @@ public class ALUTest {
     public void testSetOperator() {
         System.out.println("setOperator");
         Character operator = null;
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         instance.setOperator(operator);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -70,7 +70,7 @@ public class ALUTest {
     @Test
     public void testGetOperandUnu() {
         System.out.println("getOperandUnu");
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         Integer expResult = null;
         Integer result = instance.getOperandUnu();
         assertEquals(expResult, result);
@@ -85,7 +85,7 @@ public class ALUTest {
     public void testSetOperandUnu() {
         System.out.println("setOperandUnu");
         Integer operandUnu = null;
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         instance.setOperandUnu(operandUnu);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -97,7 +97,7 @@ public class ALUTest {
     @Test
     public void testGetOperandDoi() {
         System.out.println("getOperandDoi");
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         Integer expResult = null;
         Integer result = instance.getOperandDoi();
         assertEquals(expResult, result);
@@ -112,7 +112,7 @@ public class ALUTest {
     public void testSetOperandDoi() {
         System.out.println("setOperandDoi");
         Integer operandDoi = null;
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         instance.setOperandDoi(operandDoi);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -124,7 +124,7 @@ public class ALUTest {
     @Test
     public void testGetRezultat() {
         System.out.println("getRezultat");
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         Integer expResult = null;
         Integer result = instance.getRezultat();
         assertEquals(expResult, result);
@@ -139,7 +139,7 @@ public class ALUTest {
     public void testSetRezultat() {
         System.out.println("setRezultat");
         Integer rezultat = null;
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         instance.setRezultat(rezultat);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -151,7 +151,7 @@ public class ALUTest {
     @Test
     public void testCalculeaza() {
         System.out.println("calculeaza");
-        ALU instance = new ALU();
+        Alu instance = new Alu();
         instance.calculeaza();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
