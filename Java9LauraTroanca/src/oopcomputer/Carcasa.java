@@ -21,10 +21,6 @@ public class Carcasa {
     public Buton buton4 = new Buton('4',this);
     public Buton buton5 = new Buton('5',this);
     public Buton buton6 = new Buton('6',this);
-
-    public ALU getAlu() {
-        return alu;
-    }
     public Buton buton7 = new Buton('7',this);
     public Buton buton8 = new Buton('8',this);
     public Buton buton9 = new Buton('9',this);
@@ -33,15 +29,11 @@ public class Carcasa {
     public Buton butonOri = new Buton('*',this);
     public Buton butonImpartire = new Buton('/',this);
     public Buton butonEgal = new Buton('=',this);
-    private ALU alu = new ALU();
-    
-    /**
-     * Metoda simteButoane
-     * Atunci cand se apasa un buton sa-l citeasca si sa il trimita la ecran sa-l afiseze. 
-     */
-       public  void simteButoane(){
-           
-       }
+    private Alu alu = new Alu();    
+
+    public Alu getAlu() {
+        return alu;
+    }
     
     
     
